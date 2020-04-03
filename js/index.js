@@ -152,5 +152,5 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 $(".gw").click(function(){
-    window.location.href = "index2.html";
+    window.location.href = "./html/index2.html";
 });
