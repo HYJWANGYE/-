@@ -1,0 +1,101 @@
+* {
+    font-family: "STKaiti";
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 0.05rem;
+}
+
+.logn {
+    text-align: center;
+    margin-top: 0.02rem;
+}
+
+#box {
+    width: 100%;
+    // border: 1px solid red;
+    background: url("https://yys.res.netease.com/pc/zt/20161108171335/img/main_banner_a44c1dc.jpg") 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    >div {
+        display: inline-block;
+    }
+
+    .left {
+        height: 100%;
+        width: 25%;
+        background-color: rgba(0, 0, 0, 0.3);
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+        }
+
+        div {
+            position: absolute;
+            right: 10%;
+            bottom: 20%;
+            display: inline-block;
+            height: 1.3rem;
+            width: 0.5rem;
+            // border:1px solid red;
+            background: url("https://yys.res.netease.com/pc/zt/20161108171335/img/spriter/page_z_2a29fde.png") 0 0 no-repeat;
+        }
+    }
+
+    .center {
+        height: 100%;
+        width: 70%;
+        // border: 1px solid yellow;
+        position: absolute;
+        top: 0;
+
+        >div:first-child {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 5%;
+            font-size: 0.08rem;
+            text-align: center;
+            font-weight: bold;
+            padding-top: 0.1rem;
+            height: 0.87rem;
+            width: 0.15rem;
+            bordeR: 1px solid rgb(44, 43, 43);
+            background: url("https://yys.res.netease.com/pc/zt/20161108171335/img/spriter/page_z_2a29fde.png") -3.16rem -1.345rem no-repeat;
+        }
+
+        >div:last-child {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            // border: 1px solid red;
+            background: url("https://yys.res.netease.com/pc/gw/20180913151832/data/role/330.png") -1rem 0 no-repeat;
+
+            img {
+                position: absolute;
+                bottom: 15%;
+                right: -1.5%;
+            }
+            img:nth-of-type(2){
+                position: absolute;
+                bottom: 40%;
+                right: 0;
+            }
+            img:nth-of-type(3){
+                position: absolute;
+                bottom: 65%;
+                right: 0;
+            }
+        }
+    }
+}

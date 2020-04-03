@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index5.css">
+</head>
+
+<body>
+    <div class="logn"><img src="https://nie.res.netease.com/comm/nie.topBar/images/logo_b5525b7.png" alt=""></div>
+    <div id="box">
+        <div class="left">
+            <img src="https://webinput.nie.netease.com/img/yys/logo2.png/100" alt="">
+            <div></div>
+        </div>
+        <div class="center">
+            <div></div>
+            <div>
+                <img src="https://yys.res.netease.com/m/qt/20161108104804/img/chuchi-btn_h_ccfbe7c.png" alt="">
+                <img src="https://yys.res.netease.com/m/qt/20161108104804/img/juexing-h-btn_fe6e4cd.png" alt="">
+                <img src="https://yys.res.netease.com/m/qt/20161108104804/img/pifu-h-btn_ee2b509.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="../js/jquery-1.12.4.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/index5.js"></script>
+<script>
+    var thisURL = decodeURI(document.URL);
+    var getval = thisURL.split('?')[1];
+    var name = getval.split("=")[2]
+    var img = getval.split("=")[1].split("&")[0];
+    console.log(thisURL)
+    console.log(getval)
+    console.log(name)
+    console.log(img)
+
+    $(document).ready(function () {
+        $("#box").css({
+            "height": $(window).height() - 60 + "px",
+        })
+    });
+    $(".center>div:eq(0)").text(name)
+    $(".center>div:eq(1)").css({
+        "background":"url("+img+") -1rem 0 no-repeat"
+    })
+</script>
+
+</html>

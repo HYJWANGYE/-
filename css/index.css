@@ -1,0 +1,232 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+@media all and (min-width: 375px) {
+  .phonetop {
+    display: none;
+  }
+}
+@media all and (max-width: 700px) {
+  .erweima {
+    height: 16%;
+  }
+  .erweima img {
+    margin-top: 10px;
+  }
+}
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+  height: 400px;
+}
+.aa {
+  height: 50px;
+  width: 80px;
+}
+.topnav {
+  position: relative;
+  padding: 10px;
+}
+.topnav div {
+  font-size: 14px;
+}
+.topnav div:last-child {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.topnav img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.topnav div > span {
+  font-size: 14px;
+}
+.phonetop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: url("../img/indexImgs/bg_bar_c3a1a1d.png") 0 0 no-repeat;
+  padding: 5px;
+  z-index: 99;
+}
+.phonetop .logo {
+  width: 40px;
+  margin: 0 5px 0 15px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.phonetop img,
+.phonetop div {
+  color: #Fff;
+  vertical-align: middle;
+}
+.phonetop div {
+  line-height: 17px;
+  display: inline-block;
+}
+.phonetop div span:last-child {
+  font-size: 11px;
+}
+.phonetop div img {
+  width: 55px;
+  margin: 0 5px;
+}
+.phonetop div:last-child {
+  margin-left: 90px;
+}
+.container-fluid {
+  background: url("../img/indexImgs/bg_e429271.jpg") 0 0 no-repeat;
+  background-size: 140%, 100%;
+}
+.container-fluid .erweima {
+  padding: 30px;
+  background: url("../img/indexImgs/dld_box_9e0b590.png") 0 -20px no-repeat;
+  background-size: 100%, 100%;
+  text-align: center;
+}
+.container-fluid .erweima img {
+  border-radius: 10px;
+  width: 30%;
+  margin: 0 5px;
+  margin-top: 30px;
+}
+.container-fluid .erweima img:last-child {
+  width: 31%;
+  margin-top: 33px;
+}
+.container-fluid .gw {
+  width: 30%;
+  padding: 10px;
+}
+.container-fluid .xinbanben {
+  margin-top: 33%;
+}
+.container-fluid .listimg img {
+  padding: 10px 10px;
+  margin: 20px 0;
+  transition: all 1s linear;
+  animation: all 1s linear;
+  cursor: pointer;
+}
+.q {
+  height: 600px;
+  background: url("../img/indexImgs/bg3_1daf88b.jpg") 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.mcDiv {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: none;
+}
+.bgimg {
+  height: 450px;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  z-index: 100;
+  transform: translateY(-50%);
+}
+.bgimg h2 {
+  margin-top: 120px;
+  margin-left: 230px;
+}
+.close {
+  margin-right: 20px;
+  margin-top: 10px;
+  z-index: 100;
+}
+.phoneClose {
+  height: 25px;
+  width: 25px;
+  margin-top: 145px;
+  margin-left: 340px;
+  display: none;
+}
+.imga {
+  background: url("../img/indexImgs/pop01_aec2ad0.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.imgb {
+  background: url("../img/indexImgs/pop02_4837495.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.imgc {
+  background: url("../img/indexImgs/pop03_b1a3ca3.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.imgd {
+  background: url("../img/indexImgs/pop04_8fde914.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.zz {
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  display: none;
+  transform: translateX(-50%);
+}
+@media all and (max-width: 375px) {
+  .xinbanben {
+    padding-top: 50px;
+  }
+  .zz {
+    display: block;
+  }
+  .topnav {
+    display: none;
+  }
+  .phonetop {
+    display: block;
+  }
+  .close {
+    display: none;
+  }
+  .phoneClose {
+    display: block;
+  }
+  .mcDiv {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .bgimg {
+    height: 600px;
+  }
+  .bgimg h2 {
+    margin-top: 180px;
+    margin-left: 150px;
+  }
+  .imga {
+    background: url("../img/indexImgs/bg_01_4928e63.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+  }
+  .imgb {
+    background: url("../img/indexImgs/bg_02_f76097b.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+  }
+  .imgc {
+    background: url("../img/indexImgs/bg_03_a22e2d3.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+  }
+  .imgd {
+    background: url("../img/indexImgs/bg_04_37ec59c.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+  }
+}

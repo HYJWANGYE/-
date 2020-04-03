@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="aa">111111111</div>
+    <div id="bb">222222222</div>
+</body>
+<script>
+        function to() {
+            var getval = document.getElementsByTagName("div")[0].innerHTML;
+            console.log(getval)
+            window.location.href = "2.html?id='"+getval+"'"; 
+        }
+        to();
+</script>
+
+</html>
